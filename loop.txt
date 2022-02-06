@@ -1,0 +1,37 @@
+#include <stdio.h>
+int main() {
+	int i, j; // ต้องกำหนดค่าเริ่มต้นทุดครั้ง
+	while (i < 10) { //loop  รู้จำนวนรอบ
+		printf(“%d\n”, i);
+		i += 1
+}
+while (1) { //loop ไม่รู้จำนวนรอบ
+		printf(“%d\n”, i);
+		i += 1
+} 
+
+for (int I = 0; I < 10; I += 1) {
+	printf(“%d\n”, i);
+} 
+}
+Return type  primitive datatype , void
+ReturnType functionName(parameter) {
+	..
+	return …… //typr เดียวกับ retruntype
+	return; //ไม่ส่งค่ากลับ
+}
+// Function Prototype
+int addTwenty();
+int main () { //หาใน local ก่อน ต่อไป global
+	int x = 10;
+	int y = addTen(x);
+	printf(“In main x = %d, y = %d”, x, y);
+}
+พอฟังก์ชันเริ่มยาว main จะเริ่มลงมาข้างล่าง ใช้การประกาศ function prototype
+int addTen(int x) { //pass by value
+	printf(“x in addTen x = %d\n”, x); 
+	x += 10;
+	printf(“after addTen x = %d\n”, x);
+	return x;
+}
+**C library**

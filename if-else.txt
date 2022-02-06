@@ -1,0 +1,57 @@
+#include <stdio.h>
+int main() {
+	char str[10]; //char array size 10
+	//รับ input
+	gets(str); //รับพารามิเตอร์ 1ตัว ระวังถ้าเก็บ string overflow เก็บได้ size – 1 ไม่แนะนำให้ใช้
+	fgets(str, 10, stdin); //(char array, buffer, stdin) ขนาดของ buffer ต้องไม่มากกว่า size แนะนำให้เท่ากัน การกำหนดขนาด buffer ต้อง+ขนาดเผื่อไว้
+	printf(“input - %s”, str);
+
+#include <stdilib.h>
+	char str_i[10];
+	char str_f[10];
+	char str_l[10];
+	
+	//รับ input
+	printf(“Enter i =”); //input prompt
+	fgets(str_i, 10, stdin);
+	printf(“Enter f =”); 
+	fgets(str_f, 10, stdin);
+printf(“Enter l =”); 
+	fgets(str_l, 10, stdin);
+
+	
+//convert array to real data type
+int i = atoi(str_i);
+float f = atof(str_f);
+long l = atol(str_l);
+
+printf(“%d - %f - %ld”, i, f, l);
+
+ภาษาซี ไม่มี type bool
+//false  นอกจากนี้เป็น true ทั้งหมด array = true
+int found = 0;
+float f = 0.0;
+char c = ‘\0’; null character, terminate char,  ascii code 0
+// ”kong”  [‘k’, ‘o’, ‘n’, ‘g’, ‘\0’]
+char c = ‘’; //กำหนดไม่ได้ ต้องมีข้างใน 1 ตัว
+
+char inp[10];
+fgets(inp, 10, stdin);
+int i = atoi(inp);
+
+
+
+
+// relational operator > >= < <= == != เปรียบเทียบระหว่าง operand
+if (i < 0) {
+	printf(“if”);
+}
+// logical operator && || !
+else if (I >= 0 && i < 100) {
+	printf(“else if”);
+}
+else 
+	printf(“else”);
+}
+วิธีรับ input รับinput เป็นchar array แล้วแปลงเป็นtypeที่ต้องการ
+**อย่าลืม save file**
